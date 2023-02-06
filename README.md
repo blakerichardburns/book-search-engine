@@ -16,7 +16,7 @@ https://github.com/blakerichardburns/book-search-engine
   * [Questions](#questions)
 
   ## Installation Instructions
-
+  Dependencies: apollo-server-express, bcrypt, express, jsonwebtoken, mongoose
 
   ## Usage Information
   N/A
