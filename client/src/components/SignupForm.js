@@ -23,7 +23,6 @@ const SignupForm = () => {
     }
   }, [error]);
 
-
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setUserFormData({ ...userFormData, [name]: value });
@@ -41,8 +40,8 @@ const SignupForm = () => {
     try {
       const { data } = await addUser({
         variables: {
-          ...userFormData
-        }
+          ...userFormData,
+        },
       });
 
       // if (!response.ok) {

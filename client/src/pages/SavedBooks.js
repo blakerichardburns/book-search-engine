@@ -45,7 +45,7 @@ const SavedBooks = () => {
   // }, [userDataLength]);
 
   const { loading, data } = useQuery(GET_ME);
-  const [removeBook] = useMutation(REMOVE_BOOK);
+  const [removeBook, { error }] = useMutation(REMOVE_BOOK);
 
   const userData = data?.me || {};
 
@@ -59,8 +59,8 @@ const SavedBooks = () => {
     try {
       await removeBook({
         variables: {
-          bookId
-        }
+          bookId,
+        },
       });
 
       // if (!response.ok) {

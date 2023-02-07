@@ -11,7 +11,7 @@ const LoginForm = () => {
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [login, { error }] = useMutation(LOGIN_USER);
-  
+
   useEffect(() => {
     if (error) {
       setShowAlert(true);
@@ -38,9 +38,9 @@ const LoginForm = () => {
       // const response = await loginUser(userFormData);
       const { data } = await login({
         variables: {
-          ...userFormData
-        }
-      })
+          ...userFormData,
+        },
+      });
 
       // if (!response.ok) {
       //   throw new Error('something went wrong!');
