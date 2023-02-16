@@ -1,6 +1,8 @@
 # Book Search Engine
 Module 21 Challenge: MERN
 
+![Alt text](./client/src/assets/screenshot.JPG "Screenshot")
+
 ## Live Link
 https://bburns-book-search-engine.herokuapp.com/
 
