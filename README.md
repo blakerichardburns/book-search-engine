@@ -8,7 +8,7 @@ https://bburns-book-search-engine.herokuapp.com/
 https://github.com/blakerichardburns/book-search-engine
 
 ## Description
-
+Code refactor for an application that pulls book information searches from Google's API, and save them to a user's profile. Intended the test the developer's abilities to coordinate a full MERN stack application.
 
   ## Table of Contents
   * [Installation Instructions](#installation-instructions)
