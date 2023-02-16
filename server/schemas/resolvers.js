@@ -58,7 +58,8 @@ const resolvers = {
           { $pull: { savedBooks: { bookId } } },
           { new: true }
         );
-        throw new AuthenticationError('Please log in...');
+
+        return updatedUser;
       }
     },
   },
